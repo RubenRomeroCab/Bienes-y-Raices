@@ -1,18 +1,21 @@
 /** Media Queries **/
+@use 'variables' as v;
+@use 'sass:color';
+
 @mixin telefono {
-    @media (min-width: #{$telefono}) {
+    @media (min-width: #{v.$telefono}) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet}) {
+    @media (min-width: #{v.$tablet}) {
         @content;
     }
 }
   
 @mixin desktop {
-    @media (min-width: #{$desktop}) {
+    @media (min-width: #{v.$desktop}) {
         @content;
     }
 }
@@ -20,4 +23,20 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin boton($bgColor,$display){
+    background-color: $bgColor ;
+    color:v.$blanco;
+    font-weight: v.$bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: v.$separacion ;
+    display: $display;
+
+    &:hover{
+        
+        background-color: color.scale($bgColor , $lightness: 15%);
+    }
 }

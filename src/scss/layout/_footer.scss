@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+.footer{
+    padding: v.$separacion;
+    background-color: v.$grisOscuro;
+    
+    .contenerdor-footer{
+        padding-top: v.$separacion ;
+    }
+
+    .copyrigth{
+        color: v.$blanco;
+        text-align: center;
+    }
+}
