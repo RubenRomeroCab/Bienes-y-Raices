@@ -34,9 +34,11 @@
     text-align: center;
     margin-top: v.$separacion ;
     display: $display;
+    border: none;
 
     &:hover{
         
         background-color: color.scale($bgColor , $lightness: 15%);
+        cursor: pointer;
     }
 }
