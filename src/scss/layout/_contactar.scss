@@ -28,3 +28,12 @@
         color: v.$blanco;
     }
 }
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en el bloque */
+
+}
