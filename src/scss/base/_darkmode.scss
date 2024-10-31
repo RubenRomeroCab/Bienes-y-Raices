@@ -1,0 +1,30 @@
+@use 'sass:color';
+@use 'base/variables' as v;
+.dark-mode{
+    background-color: color.scale(v.$grisOscuro, $lightness: 6.25%);
+
+
+    p,a,h1,h2,h3,h4{
+        color: v.$blanco;
+    }
+
+    .anuncio{
+        background-color: v.$grisOscuro;
+        border: 1px solid v.$grisOscuro;
+    }
+
+.formulario legend{
+    color: v.$blanco;
+}
+
+.formulario label{
+    color: v.$blanco;
+}
+
+.formulario p{
+    color: v.$blanco;
+}
+
+}
+
+

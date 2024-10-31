@@ -1,12 +1,33 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 .footer{
     padding: v.$separacion;
     background-color: v.$grisOscuro;
     margin-bottom: 0;
-    
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         a{
+            font-size: 2rem;
+         }
+       
+    }
+
+    @include m.tablet{
+        .navegacion{
+            display: flex;  // Mantener el display como flex
+            flex-direction: row;
+        }
+
+        
+    }
     .contenerdor-footer{
+        justify-content: center;
+        align-items: center;
         padding-top: v.$separacion ;
     }
+    
 
     .copyrigth{
         color: v.$blanco;

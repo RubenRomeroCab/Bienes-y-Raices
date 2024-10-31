@@ -12,6 +12,7 @@
 .anuncio{
     background-color: color.scale(v.$gris, $lightness: 5%); // Usando color.scale
     border: 1px solid color.scale(v.$gris, $lightness: 10%); // Cambia a color.scale para evitar el error
+    margin-bottom: 3rem;
   
     .contenido-anuncio{
         padding: 2rem;
