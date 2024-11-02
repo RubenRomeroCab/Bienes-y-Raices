@@ -8,7 +8,7 @@
         </nav>
     </div>
     <p class="copyrigth">Todos los derechos reservados <?php echo $fecha = date('Y'); ?> &copy; </p>
-    <script src="build/js/bundle.min.js"></script>
+    <script src="/PHP/bienesraices_inicio/build/js/bundle.min.js"></script>
 </body>
 
 </html>
