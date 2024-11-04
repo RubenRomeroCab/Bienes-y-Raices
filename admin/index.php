@@ -1,6 +1,6 @@
 <?php
 
-require '../includes/funciones.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . "/PHP/bienesraices_inicio/includes/funciones.php";
 
 incluirTemplates('header');
 ?>

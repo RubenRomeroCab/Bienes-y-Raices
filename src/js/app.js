@@ -14,7 +14,7 @@ function darkMode(){
 }
 function eventListener(){
     const mobileMenu = document.querySelector('.menu-mobile');
-    mobileMenu.addEventListener('click' ,navegacionResposive)
+    mobileMenu.addEventListener('click' ,navegacionResposive);
 
 }
 

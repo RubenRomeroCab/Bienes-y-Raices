@@ -24,10 +24,10 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/PHP/bienesraices_inicio/build/img/dark-mode.svg" alt="">
                     <nav class="navegacion">
-                        <a href="nosotros.php">Nosotros</a>
-                        <a href="anuncios.php">Anuncio</a>
-                        <a href="blog.php">Blog</a>
-                        <a href="contacto.php">Contacto</a>
+                        <a href="/PHP/bienesraices_inicio/nosotros.php">Nosotros</a>
+                        <a href="/PHP/bienesraices_inicio/anuncios.php">Anuncio</a>
+                        <a href="/PHP/bienesraices_inicio/blog.php">Blog</a>
+                        <a href="/PHP/bienesraices_inicio/contacto.php">Contacto</a>
                     </nav>
 
                 </div>

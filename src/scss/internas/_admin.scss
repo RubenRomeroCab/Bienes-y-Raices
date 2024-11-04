@@ -1,0 +1,13 @@
+@use 'base/variables' as v ;
+
+.alerta{
+
+    &.error{
+        background-color: v.$error;
+        padding: .5rem;
+        margin: 2rem;
+        text-align: center;
+        color: v.$blanco;
+        font-weight: v.$bold;
+    }
+}
