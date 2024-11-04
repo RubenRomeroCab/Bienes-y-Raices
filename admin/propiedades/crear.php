@@ -3,6 +3,9 @@
 require '../../includes/templates/config/database.php';
 $db = conectarDB();
 
+$consulta = "SELECT * FROM vendedores";
+$resultado = mysqli_query( $db, $consulta);
+
 //echo "<pre>";
 //var_dump($_SERVER['REQUEST_METHOD']);
 //echo "</pre>";
@@ -140,8 +143,9 @@ incluirTemplates('header');
 
             <select name="vendedores_id">
                 <option value="">Seleccione</option>
-                <option value="1">Juan</option>
-                <option value="2">Ruben</option>
+                <?php while ($vendedor = mysqli_fetch_assoc($resultado)): ?>
+                    <option  <?php echo $vendedores === $vendedor['id'] ? 'selected' : ''; ?>  value="<?php echo $vendedor['id'];?>"><?php echo$vendedor['nombre'] ." ". $vendedor['apellido']; ?></option>
+                <?php endwhile;?>
             </select>
         </fieldset>
 
